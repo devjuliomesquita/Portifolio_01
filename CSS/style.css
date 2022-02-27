@@ -238,8 +238,29 @@ header .navbar ul li a:hover{
     color: #fff;
     background: var(--yellow);
 }
-
-
+.portifolio .box-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.portifolio .box-conteiner .box{
+    height: 20rem;
+    width: 36rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portifolio .box-conteiner .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portifolio .box-conteiner .box:hover img{
+    transform: scale(1.2);
+}
 
 @media(max-width:1200px){
     html{
@@ -280,6 +301,9 @@ header .navbar ul li a:hover{
         width: 100%;
     }
     .education .box-conteiner .box{
+        width: 100%;
+    }
+    .portifolio .box-conteiner .box{
         width: 100%;
     }
 }
