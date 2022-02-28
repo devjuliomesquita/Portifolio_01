@@ -261,6 +261,59 @@ header .navbar ul li a:hover{
 .portifolio .box-conteiner .box:hover img{
     transform: scale(1.2);
 }
+.contato .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contato .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contato .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contato .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+.contato .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contato .row form .message{
+    height: 15rem;
+    resize: none;
+}
+.contato .row .content .title{
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 3rem;
+}
+.contato .row .content .info h3{
+    display: flex;
+    color: #eee;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contato .row .content .info h3 i{
+    color: var(--yellow);
+    padding-right: 1rem;
+}
+
+
 
 @media(max-width:1200px){
     html{
@@ -305,5 +358,8 @@ header .navbar ul li a:hover{
     }
     .portifolio .box-conteiner .box{
         width: 100%;
+    }
+    .contato .row form{
+        margin: 3rem 0;
     }
 }
